@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Casa del Café</title>
+<link rel="icon" type="image/png" href="Ico.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"></script>
+<link rel="stylesheet" href="CSS/Style.css">
+</head>
+<body>
+
+<canvas id="stars"></canvas>
+
+<div class="shell">
+
+  <nav class="sidebar" id="sidebar">
+    <div class="side-item active" onclick="location.href='Index.HTML'">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M3 12l9-9 9 9M5 10v10h14V10"/>
+    </svg>
+      <span>Regresar</span>
+    </div>
+
+    <div class="side-divider"></div>
+    <div class="side-item" onclick="location.href='Descubre/Descubre.html'">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M12 3l1.6 5.4L19 10l-5.4 1.6L12 17l-1.6-5.4L5 10l5.4-1.6L12 3z"/>
+        <path d="M19 16l.7 2.3L22 19l-2.3.7L19 22l-.7-2.3L16 19l2.3-.7L19 16z"/>
+        </svg>
+      <span>Descubre</span>
+    </div>
+    
+    <div class="side-item" onclick="location.href='Sabores/Sabores.html'">
+       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M4 11h16v9H4z"/>
+          <path d="M4 15c2 1 3-1 5 0s3 1 5 0 3-1 6 0"/>
+          <path d="M7 11c0-3 2-5 5-5s5 2 5 5"/>
+           <path d="M12 6V3"/>
+        </svg>
+      <span>Sabores</span>
+    </div>
+
+    <div class="side-item" onclick="location.href='Ritual/Ritual.html'">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+  <path d="M4 9h13v6a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5V9z"/>
+  <path d="M17 11h2a3 3 0 0 1 0 6h-3"/>
+  <path d="M8 6c-1-1 1-2 0-3"/>
+  <path d="M12 6c-1-1 1-2 0-3"/>
+</svg>
+      <span>Ritual</span>
+    </div>
+
+    <div class="side-item" onclick="location.href='Viaje/Viaje.html'">
+       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+  <circle cx="12" cy="12" r="9"/>
+  <path d="M15.5 8.5l-2 5-5 2 2-5 5-2z"/>
+  <circle cx="12" cy="12" r="1"/>
+</svg>
+      <span>Viaje</span>
+    </div>
+
+    <div class="side-item" onclick="location.href='Aroma/Aroma.html'">
+     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+  <path d="M5 19c4-1 7-4 9-8"/>
+  <path d="M6 16C3 12 5 7 11 5c2 5 0 9-5 11z"/>
+  <path d="M15 6c1-1 1-2 0-3"/>
+  <path d="M18 8c2-2 2-4 0-5"/>
+</svg>
+      <span>Aroma</span>
+    </div>
+    
+        <div class="side-item" onclick="location.href='Taller/Taller.html'">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+  <path d="M14 6a4 4 0 0 0 5 5l-8 8a2 2 0 0 1-3-3l8-8"/>
+  <path d="M5 4l15 15"/>
+  <path d="M4 3l3 1 1 3-2 2-3-3 1-3z"/>
+</svg>
+      <span>Taller</span>
+    </div>
+
+        <div class="side-item" onclick="location.href='Historia/Historias.html'">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+  <path d="M3 5h6a3 3 0 0 1 3 3v11a3 3 0 0 0-3-3H3V5z"/>
+  <path d="M21 5h-6a3 3 0 0 0-3 3v11a3 3 0 0 1 3-3h6V5z"/>
+</svg>
+      <span>Historias</span>
+    </div>
+
+    <div class="side-item" onclick="location.href='Nosotros/Nosotros.html'">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+  <circle cx="9" cy="8" r="3"/>
+  <circle cx="17" cy="9" r="2"/>
+  <path d="M3 20c0-4 2-7 6-7s6 3 6 7"/>
+  <path d="M15 14c3 0 5 2 5 5"/>
+</svg>
+      <span>Nosotros</span>
+    </div>
+  </nav>
+
+  <div class="main">
+
+    <header>
+
+      <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="brand">
+        <div>
+       <div class="brand-title">
+    <h1>CASA DEL CAFÉ</h1>
+    <div id="coffee-animation"></div>
+</div>
+      </div>
+      </div>
+
+      <div class="searchbar">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+        <input id="site-search" type="text" placeholder="Buscar variedades, fincas y métodos..." autocomplete="off">
+        <div class="search-results" id="search-results"></div>
+      </div>
+
+      <div class="header-actions">
+        <button class="btn btn-fill" onclick="location.href='Descubre/Descubre.html'">EXPLORAR CAFÉS</button>
+        <button class="btn btn-fill" onclick="location.href='Registro/registro.html'">REGISTRARSE
+</button>
+        
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="coffee-plant" aria-hidden="true">
+<div class="plant-glow"></div><div class="branch branch-main"></div><div class="branch branch-a"></div><div class="branch branch-b"></div>
+<span class="leaf l1"></span><span class="leaf l2"></span><span class="leaf l3"></span><span class="leaf l4"></span><span class="leaf l5"></span><span class="leaf l6"></span><span class="leaf l7"></span><span class="leaf l8"></span>
+<span class="coffee-cherry c1"></span><span class="coffee-cherry c2"></span><span class="coffee-cherry c3"></span><span class="coffee-cherry c4"></span><span class="coffee-cherry c5"></span>
+</div>
+      <p class="eyebrow">Una guía para saborear despacio</p>
+      <h2>EL ARTE DEL CAFÉ<br>DE ORIGEN</h2>
+      <p>Variedades, cultivo, tostado y preparación: todo lo necesario para descubrir la historia que vive en cada grano salvadoreño.</p>
+      <div class="hero-actions">
+        <a class="hero-btn primary" href="#explora-inicio">COMENZAR RECORRIDO</a>
+        <button class="hero-btn secondary" id="random-coffee-btn">SORPRÉNDEME ☕</button>
+      </div>
+      <div class="hero-fact" id="hero-fact">
+        <span>Dato del día</span>
+        <b>El aroma puede cambiar mucho según el tueste y la preparación.</b>
+      </div>
+    </section>
+
+    <div class="guide" role="button" tabindex="0" onclick="location.href='Viaje/Viaje.html'">
+      <div>
+        <h3>RUTA DEL CAFÉ SALVADOREÑO</h3>
+        <p>De las montañas de Apaneca-Ilamatepec a tu mesa: una introducción al grano, la molienda y el ritual de preparar.</p>
+      </div>
+      <div class="guide-arrow">→</div>
+    </div>
+
+    <section class="grid">
+      <div class="card">
+        <div class="card-head"><h4>BIENVENIDO A LA CASA</h4></div>
+        <div class="card-body">
+          Una guía dedicada a la cultura del <b>café de especialidad</b>. Descubre <a href="Sabores/Sabores.html">variedades</a>, <a href="Viaje/Viaje.html">procesos</a> y <a href="Ritual/Ritual.html">métodos de preparación</a> con historias de productores salvadoreños.
+        </div>
+        <div class="stat-row"><span>Fincas destacadas</span><span>24</span></div>
+      </div>
+
+      <div class="card">
+        <div class="card-img coffee"></div>
+        <div class="card-head"><h4>COSECHA DESTACADA</h4></div>
+        <div class="card-body">
+          Pacamara lavado de Santa Ana: notas de cacao, mandarina y miel. Conoce cómo la altitud, la selección y el secado definen su dulzor.
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-head"><h4>PERFILES DE TOSTADO</h4></div>
+        <div class="card-body">
+          <div style="display:flex; justify-content:space-between; margin-bottom:10px;"><span>Claro</span><b style="color:var(--moss)">Floral · Cítrico</b></div>
+          <div style="display:flex; justify-content:space-between; margin-bottom:10px;"><span>Medio</span><b style="color:var(--moss)">Caramelo · Cacao</b></div>
+          <div style="display:flex; justify-content:space-between;"><span>Oscuro</span><b style="color:var(--moss)">Intenso · Especias</b></div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="home-section intro-section" id="explora-inicio">
+      <div class="section-title">
+        <span class="eyebrow">APRENDE SIN COMPLICARTE</span>
+        <h2>¿Qué hace especial a una taza de café?</h2>
+        <p>El sabor final no depende de una sola cosa. El origen, la variedad, el proceso, el tueste, la molienda y el método trabajan juntos.</p>
+      </div>
+
+      <div class="pillars-grid">
+        <article class="pillar-card">
+          <span class="pillar-number">01</span>
+          <div class="pillar-icon">🌱</div>
+          <h3>Origen</h3>
+          <p>La altura, el clima y el suelo influyen en cómo se desarrolla el grano.</p>
+          <a href="Viaje/Viaje.html">Ver el viaje →</a>
+        </article>
+        <article class="pillar-card">
+          <span class="pillar-number">02</span>
+          <div class="pillar-icon">🍒</div>
+          <h3>Variedad</h3>
+          <p>Pacamara, Bourbon y otras variedades pueden ofrecer perfiles muy distintos.</p>
+          <a href="Sabores/Sabores.html">Explorar sabores →</a>
+        </article>
+        <article class="pillar-card">
+          <span class="pillar-number">03</span>
+          <div class="pillar-icon">🔥</div>
+          <h3>Tueste</h3>
+          <p>Un tueste claro resalta acidez y aroma; uno oscuro aumenta notas intensas.</p>
+          <button class="text-button" data-scroll="#roast-lab">Probar laboratorio →</button>
+        </article>
+        <article class="pillar-card">
+          <span class="pillar-number">04</span>
+          <div class="pillar-icon">☕</div>
+          <h3>Preparación</h3>
+          <p>La proporción, el tiempo y la molienda cambian por completo una receta.</p>
+          <a href="Ritual/Ritual.html">Aprender métodos →</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="home-section roast-lab" id="roast-lab">
+      <div class="section-title compact">
+        <span class="eyebrow">INTERACTIVO · PERFIL DE TUESTE</span>
+        <h2>Mueve el tueste y mira cómo cambia la taza</h2>
+      </div>
+
+      <div class="roast-panel">
+        <div class="roast-visual">
+          <div class="bean-stage" id="bean-stage">
+            <div class="bean-shape"></div>
+            <div class="bean-shape small"></div>
+          </div>
+          <div class="roast-label" id="roast-label">Tueste medio</div>
+        </div>
+
+        <div class="roast-controls">
+          <label for="roast-range">Nivel de tueste</label>
+          <input type="range" id="roast-range" min="1" max="3" value="2" step="1">
+          <div class="range-labels"><span>Claro</span><span>Medio</span><span>Oscuro</span></div>
+
+          <div class="roast-info">
+            <div><span>Aroma</span><b id="roast-aroma">Caramelo y cacao</b></div>
+            <div><span>Acidez</span><b id="roast-acidity">Equilibrada</b></div>
+            <div><span>Cuerpo</span><b id="roast-body">Medio</b></div>
+            <div><span>Ideal para</span><b id="roast-method">V60 · Prensa · Espresso suave</b></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="home-section journey-preview">
+      <div class="section-title">
+        <span class="eyebrow">DEL CAFETAL A LA TAZA</span>
+        <h2>El café pasa por muchas manos antes de llegar a ti</h2>
+        <p>Toca cada etapa para descubrir qué ocurre en ese momento.</p>
+      </div>
+
+      <div class="journey-track" id="journey-track">
+        <button class="journey-step active" data-title="Cultivo" data-text="La planta crece durante años antes de producir cerezas listas para cosechar.">
+          <span>🌱</span><b>1</b><small>Cultivo</small>
+        </button>
+        <button class="journey-step" data-title="Cosecha" data-text="Las cerezas maduras se seleccionan a mano o mediante distintos métodos de recolección.">
+          <span>🍒</span><b>2</b><small>Cosecha</small>
+        </button>
+        <button class="journey-step" data-title="Proceso" data-text="Lavado, natural o honey: cada proceso cambia dulzor, limpieza y cuerpo.">
+          <span>💧</span><b>3</b><small>Proceso</small>
+        </button>
+        <button class="journey-step" data-title="Tueste" data-text="El calor transforma aromas y sabores que estaban escondidos dentro del grano verde.">
+          <span>🔥</span><b>4</b><small>Tueste</small>
+        </button>
+        <button class="journey-step" data-title="Preparación" data-text="Molienda, agua, tiempo y proporción terminan de construir la taza.">
+          <span>☕</span><b>5</b><small>Taza</small>
+        </button>
+      </div>
+
+      <div class="journey-detail">
+        <span id="journey-title">Cultivo</span>
+        <p id="journey-text">La planta crece durante años antes de producir cerezas listas para cosechar.</p>
+        <a href="Viaje/Viaje.html">Ver el viaje completo →</a>
+      </div>
+    </section>
+
+    <section class="home-section brew-tool">
+      <div class="section-title compact">
+        <span class="eyebrow">MINI HERRAMIENTA</span>
+        <h2>Calculadora rápida de café</h2>
+        <p>Escoge cuántas tazas quieres preparar y te damos una referencia sencilla.</p>
+      </div>
+
+      <div class="brew-card">
+        <div class="brew-control">
+          <label for="cups-range">Tazas</label>
+          <input id="cups-range" type="range" min="1" max="6" value="2">
+          <strong><span id="cups-value">2</span> tazas</strong>
+        </div>
+
+        <div class="brew-results">
+          <div><span>☕ Café</span><b id="coffee-grams">30 g</b></div>
+          <div><span>💧 Agua</span><b id="water-ml">500 ml</b></div>
+          <div><span>⚖️ Proporción</span><b>1:16.7</b></div>
+          <div><span>⏱️ Tiempo sugerido</span><b id="brew-time">3–4 min</b></div>
+        </div>
+
+        <p class="tool-note">Es una guía inicial: ajusta después según tu método y tu gusto.</p>
+      </div>
+    </section>
+
+    <section class="home-section discover-grid">
+      <article class="discover-card big-card">
+        <span class="eyebrow">¿QUÉ TE GUSTARÍA DESCUBRIR?</span>
+        <h2>Tu próxima taza puede empezar por curiosidad.</h2>
+        <p>Explora aromas, sabores, historias y métodos sin tener que saber de café desde antes.</p>
+        <div class="discover-links">
+          <a href="Aroma/Aroma.html">👃 Entrenar el aroma</a>
+          <a href="Sabores/Sabores.html">🍫 Descubrir sabores</a>
+          <a href="Taller/Taller.html">🛠️ Practicar en el taller</a>
+          <a href="Historia/Historias.html">📖 Leer historias</a>
+        </div>
+      </article>
+
+      <article class="quiz-card">
+        <span class="eyebrow">QUIZ RÁPIDO</span>
+        <h3>¿Qué perfil te llama más?</h3>
+        <div class="quiz-options">
+          <button data-profile="frutal">🍊 Frutal y cítrico</button>
+          <button data-profile="dulce">🍯 Dulce y caramelizado</button>
+          <button data-profile="intenso">🍫 Intenso y chocolatoso</button>
+        </div>
+        <div class="quiz-result" id="quiz-result">Elige una opción y te recomiendo por dónde empezar.</div>
+      </article>
+    </section>
+
+    <footer>
+      <span>Casa del Café — una guía para aprender y compartir</span>
+      <span>24 fincas · cosecha 2026</span>
+    </footer>
+
+  </div>
+</div>
+
+<script src="JS/scrip.js"></script>
+
+</body>
+</html>

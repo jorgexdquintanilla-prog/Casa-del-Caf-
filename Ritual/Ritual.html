@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ritual | Casa del Café</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;600&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="Ritual.css">
+</head>
+
+<body>
+
+
+    <!-- =========================
+         MENÚ LATERAL
+    ========================== -->
+
+    <nav class="sidebar" id="sidebar">
+
+        <div class="side-item" onclick="location.href='../Index.HTML'">
+
+            <svg viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2">
+
+                <path d="M3 12l9-9 9 9M5 10v10h14V10"/>
+
+            </svg>
+
+            <span>Regresar</span>
+
+        </div>
+
+
+        <div class="side-divider"></div>
+
+
+        <div class="side-item"
+            onclick="location.href='../Descubre/Descubre.html'">
+
+            <svg viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2">
+
+                <path d="M12 3l1.6 5.4L19 10l-5.4 1.6L12 17l-1.6-5.4L5 10l5.4-1.6L12 3z"/>
+
+                <path d="M19 16l.7 2.3L22 19l-2.3.7L19 22l-.7-2.3L16 19l2.3-.7L19 16z"/>
+
+            </svg>
+
+            <span>Descubre</span>
+
+        </div>
+
+
+        <div class="side-item"
+            onclick="location.href='../Sabores/Sabores.html'">
+
+            <svg viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2">
+
+                <path d="M4 11h16v9H4z"/>
+                <path d="M4 15c2 1 3-1 5 0s3 1 5 0 3-1 6 0"/>
+                <path d="M7 11c0-3 2-5 5-5s5 2 5 5"/>
+                <path d="M12 6V3"/>
+
+            </svg>
+
+            <span>Sabores</span>
+
+        </div>
+
+
+        <div class="side-item active"
+            onclick="location.href='Ritual.html'">
+
+            <svg viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2">
+
+                <path d="M4 9h13v6a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5V9z"/>
+                <path d="M17 11h2a3 3 0 0 1 0 6h-3"/>
+                <path d="M8 6c-1-1 1-2 0-3"/>
+                <path d="M12 6c-1-1 1-2 0-3"/>
+
+            </svg>
+
+            <span>Ritual</span>
+
+        </div>
+
+
+        <div class="side-item"
+            onclick="location.href='../Viaje/Viaje.html'">
+
+            <svg viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2">
+
+                <circle cx="12" cy="12" r="9"/>
+                <path d="M15.5 8.5l-2 5-5 2 2-5 5-2z"/>
+                <circle cx="12" cy="12" r="1"/>
+
+            </svg>
+
+            <span>Viaje</span>
+
+        </div>
+
+
+        <div class="side-item"
+            onclick="location.href='../Aroma/Aroma.html'">
+
+            <svg viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2">
+
+                <path d="M5 19c4-1 7-4 9-8"/>
+                <path d="M6 16C3 12 5 7 11 5c2 5 0 9-5 11z"/>
+                <path d="M15 6c1-1 1-2 0-3"/>
+                <path d="M18 8c2-2 2-4 0-5"/>
+
+            </svg>
+
+            <span>Aroma</span>
+
+        </div>
+
+
+        <div class="side-item"
+            onclick="location.href='../Taller/Taller.html'">
+
+            <svg viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2">
+
+                <path d="M14 6a4 4 0 0 0 5 5l-8 8a2 2 0 0 1-3-3l8-8"/>
+                <path d="M5 4l15 15"/>
+                <path d="M4 3l3 1 1 3-2 2-3-3 1-3z"/>
+
+            </svg>
+
+            <span>Taller</span>
+
+        </div>
+
+
+        <div class="side-item"
+            onclick="location.href='../Historia/Historias.html'">
+
+            <svg viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2">
+
+                <path d="M3 5h6a3 3 0 0 1 3 3v11a3 3 0 0 0-3-3H3V5z"/>
+
+                <path d="M21 5h-6a3 3 0 0 0-3 3v11a3 3 0 0 1 3-3h6V5z"/>
+
+            </svg>
+
+            <span>Historias</span>
+
+        </div>
+
+
+        <div class="side-item"
+            onclick="location.href='../nosotros/Nosotros.html'">
+
+            <svg viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2">
+
+                <circle cx="9" cy="8" r="3"/>
+                <circle cx="17" cy="9" r="2"/>
+                <path d="M3 20c0-4 2-7 6-7s6 3 6 7"/>
+                <path d="M15 14c3 0 5 2 5 5"/>
+
+            </svg>
+
+            <span>Nosotros</span>
+
+        </div>
+
+    </nav>
+
+
+
+    <!-- =========================
+         HEADER
+    ========================== -->
+
+    <header class="header header-nuevo">
+
+        <button
+            class="menu-toggle"
+            id="menu-toggle"
+            aria-label="Abrir menú">
+
+            <span></span>
+            <span></span>
+            <span></span>
+
+        </button>
+
+        <a href="../Index.HTML" class="marca marca-simple">
+            <h1>CASA DEL CAFÉ</h1>
+        </a>
+
+        <div class="header-search">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="7"></circle>
+                <path d="M21 21l-4.3-4.3"></path>
+            </svg>
+
+            <input
+                type="text"
+                id="ritual-search"
+                placeholder="Buscar variedades, fincas y métodos..."
+                autocomplete="off"
+            >
+        </div>
+
+        <div class="header-actions">
+            <a href="../Descubre/Descubre.html" class="header-btn">
+                EXPLORAR CAFÉS
+            </a>
+
+            <a href="../Registro/Registro.html" class="header-btn">
+                REGISTRARSE
+            </a>
+        </div>
+
+    </header>
+
+
+
+    <!-- =========================
+         PORTADA
+    ========================== -->
+
+    <section class="hero">
+
+        <div class="hero-luz"></div>
+
+
+        <div class="hero-texto">
+
+            <span class="codigo">
+                04 · RITUAL
+            </span>
+
+
+            <h2>
+
+                EL CAFÉ
+
+                <br>
+
+                NO EMPIEZA
+
+                <br>
+
+                EN LA TAZA.
+
+            </h2>
+
+
+            <p>
+
+                Comienza cuando eliges detenerte,
+                preparar el espacio y dedicar unos
+                minutos solamente al momento.
+
+            </p>
+
+
+            <a href="#pasos">
+
+                COMENZAR EL RITUAL ↓
+
+            </a>
+
+        </div>
+
+
+
+        <!-- TAZA DECORATIVA -->
+
+        <div class="taza-hero">
+
+            <div class="vapor vapor-1"></div>
+
+            <div class="vapor vapor-2"></div>
+
+            <div class="vapor vapor-3"></div>
+
+
+            <div class="taza">
+
+                <div class="cafe"></div>
+
+                <div class="asa"></div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         INTRO
+    ========================== -->
+
+    <section class="intro">
+
+        <span>
+            ✦ UNA PAUSA
+        </span>
+
+        <h2>
+            Preparar café también
+            puede ser parte del momento.
+        </h2>
+
+        <p>
+
+            No necesitas convertirlo en algo complicado.
+            Un pequeño ritual puede comenzar simplemente
+            prestando atención a lo que haces.
+
+        </p>
+
+    </section>
+
+
+
+    <!-- =========================
+         PASOS
+    ========================== -->
+
+    <main class="pasos" id="pasos">
+
+
+        <!-- PASO 1 -->
+
+        <section class="paso">
+
+            <div class="paso-numero">
+                01
+            </div>
+
+
+            <div class="paso-icono">
+                ✦
+            </div>
+
+
+            <div class="paso-info">
+
+                <span>
+                    COMIENZA AQUÍ
+                </span>
+
+                <h3>
+                    Prepara el espacio
+                </h3>
+
+                <p>
+
+                    Despeja un pequeño lugar,
+                    baja un poco el ritmo y prepara
+                    solamente lo que vas a utilizar.
+
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- PASO 2 -->
+
+        <section class="paso invertido">
+
+            <div class="paso-numero">
+                02
+            </div>
+
+
+            <div class="paso-icono">
+                🌿
+            </div>
+
+
+            <div class="paso-info">
+
+                <span>
+                    ELIGE
+                </span>
+
+                <h3>
+                    Encuentra tu café
+                </h3>
+
+                <p>
+
+                    Hay cafés suaves, intensos,
+                    frutales, dulces o tostados.
+                    Elige uno según el momento
+                    que quieras crear.
+
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- PASO 3 -->
+
+        <section class="paso">
+
+            <div class="paso-numero">
+                03
+            </div>
+
+
+            <div class="paso-icono">
+                ◉
+            </div>
+
+
+            <div class="paso-info">
+
+                <span>
+                    AROMA
+                </span>
+
+                <h3>
+                    Muele con calma
+                </h3>
+
+                <p>
+
+                    Moler el café justo antes
+                    de prepararlo ayuda a conservar
+                    sus aromas y convierte el proceso
+                    en parte de la experiencia.
+
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- PASO 4 -->
+
+        <section class="paso invertido">
+
+            <div class="paso-numero">
+                04
+            </div>
+
+
+            <div class="paso-icono">
+                ♨
+            </div>
+
+
+            <div class="paso-info">
+
+                <span>
+                    PREPARA
+                </span>
+
+                <h3>
+                    Deja trabajar al agua
+                </h3>
+
+                <p>
+
+                    Mientras el agua entra en contacto
+                    con el café, los aromas comienzan
+                    a liberarse. No hace falta apresurarlo.
+
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- PASO 5 -->
+
+        <section class="paso">
+
+            <div class="paso-numero">
+                05
+            </div>
+
+
+            <div class="paso-icono">
+                ☕
+            </div>
+
+
+            <div class="paso-info">
+
+                <span>
+                    CASI LISTO
+                </span>
+
+                <h3>
+                    Sirve tu taza
+                </h3>
+
+                <p>
+
+                    Elige una taza que te guste,
+                    sírvela y deja que el aroma
+                    haga su parte antes del primer sorbo.
+
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- PASO 6 -->
+
+        <section class="paso invertido">
+
+            <div class="paso-numero">
+                06
+            </div>
+
+
+            <div class="paso-icono">
+                ✧
+            </div>
+
+
+            <div class="paso-info">
+
+                <span>
+                    FINALMENTE
+                </span>
+
+                <h3>
+                    Disfruta sin prisa
+                </h3>
+
+                <p>
+
+                    El café durará unos minutos.
+                    Aprovecha esos minutos para escuchar,
+                    pensar, leer o simplemente no hacer nada.
+
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- =========================
+         CREA TU RITUAL
+    ========================== -->
+
+    <section class="tu-ritual">
+
+        <div class="titulo-seccion">
+
+            <span>
+                CREA TU RITUAL
+            </span>
+
+            <h2>
+                ¿Cuál es tu momento?
+            </h2>
+
+            <p>
+
+                Elige una opción y encuentra
+                una pequeña idea para acompañar tu café.
+
+            </p>
+
+        </div>
+
+
+
+        <div class="momentos">
+
+
+            <button
+                class="momento activo"
+                data-momento="manana">
+
+                <span>☀️</span>
+
+                MAÑANA
+
+            </button>
+
+
+            <button
+                class="momento"
+                data-momento="tarde">
+
+                <span>🌧️</span>
+
+                TARDE
+
+            </button>
+
+
+            <button
+                class="momento"
+                data-momento="noche">
+
+                <span>🌙</span>
+
+                NOCHE
+
+            </button>
+
+
+        </div>
+
+
+
+        <!-- TARJETA QUE CAMBIA CON JS -->
+
+        <div class="ritual-card" id="ritual-card">
+
+
+            <div class="ritual-icono" id="ritual-icono">
+
+                ☀️
+
+            </div>
+
+
+            <div class="ritual-contenido">
+
+
+                <span id="ritual-subtitulo">
+
+                    COMIENZA EL DÍA
+
+                </span>
+
+
+                <h3 id="ritual-titulo">
+
+                    Un comienzo tranquilo
+
+                </h3>
+
+
+
+                <div class="ritual-grid">
+
+
+                    <div>
+
+                        <small>
+                            AMBIENTE
+                        </small>
+
+                        <p id="ritual-ambiente">
+
+                            Luz natural · Música tranquila
+
+                        </p>
+
+                    </div>
+
+
+
+                    <div>
+
+                        <small>
+                            TU CAFÉ
+                        </small>
+
+                        <p id="ritual-cafe">
+
+                            Intenso y aromático
+
+                        </p>
+
+                    </div>
+
+
+
+                    <div>
+
+                        <small>
+                            ACOMPAÑA CON
+                        </small>
+
+                        <p id="ritual-acompanar">
+
+                            Desayuno ligero o unos minutos de silencio
+
+                        </p>
+
+                    </div>
+
+
+
+                    <div>
+
+                        <small>
+                            TIEMPO
+                        </small>
+
+                        <p id="ritual-tiempo">
+
+                            5 — 10 minutos
+
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         FRASE
+    ========================== -->
+
+    <section class="pausa">
+
+        <div class="linea"></div>
+
+        <p>
+            “A veces una taza no cambia el día.
+            Pero sí puede cambiar unos minutos.”
+        </p>
+
+        <div class="linea"></div>
+
+    </section>
+
+
+
+    <!-- =========================
+         FINAL
+    ========================== -->
+
+    <section class="final">
+
+
+        <div class="taza-final">
+
+
+            <div class="vapor-final vapor-final-1"></div>
+
+            <div class="vapor-final vapor-final-2"></div>
+
+            <div class="vapor-final vapor-final-3"></div>
+
+
+            <div class="taza-mini">
+
+                <div class="cafe-mini"></div>
+
+                <div class="asa-mini"></div>
+
+            </div>
+
+
+        </div>
+
+
+
+        <span>
+            CASA DEL CAFÉ
+        </span>
+
+
+        <h2>
+
+            NO TENGAS PRISA.
+
+        </h2>
+
+
+        <p>
+
+            El café dura unos minutos.
+
+            <br>
+
+            El momento puede quedarse mucho más.
+
+        </p>
+
+
+        <a href="../Index.HTML">
+
+            VOLVER A CASA →
+
+        </a>
+
+    </section>
+
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer>
+
+        <span>
+            Casa del Café
+        </span>
+
+        <span>
+            Tómate tu tiempo. ☕
+        </span>
+
+    </footer>
+
+
+
+    <script src="Ritual.js"></script>
+
+</body>
+
+</html>

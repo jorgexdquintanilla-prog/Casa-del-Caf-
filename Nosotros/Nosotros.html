@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Nosotros | Casa del Café</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="Nosotros.css">
+</head>
+
+<body>
+
+  <!-- =====================================================
+       HEADER
+  ====================================================== -->
+  <header class="site-header">
+    <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <div class="brand">
+      <div class="brand-title">
+        <h1>CASA DEL CAFÉ</h1>
+        <span class="coffee-mini">☕</span>
+      </div>
+    </div>
+
+    <div class="searchbar">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="11" cy="11" r="7"/>
+        <path d="M21 21l-4.3-4.3"/>
+      </svg>
+      <input id="searchInput" type="text" placeholder="Buscar variedades, fincas y métodos...">
+    </div>
+
+    <div class="header-actions">
+      <button class="nav-btn btn-fill" onclick="location.href='../Paginas/explorar-cafe.html'">EXPLORAR CAFÉS</button>
+      <button class="nav-btn btn-fill" onclick="location.href='../Registro/registro.html'">REGISTRARSE</button>
+    </div>
+  </header>
+
+
+  <!-- =====================================================
+       MENÚ LATERAL
+  ====================================================== -->
+  <nav class="sidebar" id="sidebar">
+    <div class="side-item" onclick="location.href='../Index.HTML'">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M3 12l9-9 9 9M5 10v10h14V10"/>
+      </svg>
+      <span>Regresar</span>
+    </div>
+
+    <div class="side-divider"></div>
+
+    <div class="side-item" onclick="location.href='../Descubre/Descubre.html'">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M12 3l1.6 5.4L19 10l-5.4 1.6L12 17l-1.6-5.4L5 10l5.4-1.6L12 3z"/>
+        <path d="M19 16l.7 2.3L22 19l-2.3.7L19 22l-.7-2.3L16 19l2.3-.7L19 16z"/>
+      </svg>
+      <span>Descubre</span>
+    </div>
+
+    <div class="side-item" onclick="location.href='../Sabores/Sabores.html'">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M4 11h16v9H4z"/>
+        <path d="M4 15c2 1 3-1 5 0s3 1 5 0 3-1 6 0"/>
+        <path d="M7 11c0-3 2-5 5-5s5 2 5 5"/>
+        <path d="M12 6V3"/>
+      </svg>
+      <span>Sabores</span>
+    </div>
+
+    <div class="side-item" onclick="location.href='../Ritual/Ritual.html'">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M4 9h13v6a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5V9z"/>
+        <path d="M17 11h2a3 3 0 0 1 0 6h-3"/>
+        <path d="M8 6c-1-1 1-2 0-3"/>
+        <path d="M12 6c-1-1 1-2 0-3"/>
+      </svg>
+      <span>Ritual</span>
+    </div>
+
+    <div class="side-item" onclick="location.href='../Viaje/Viaje.html'">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="12" cy="12" r="9"/>
+        <path d="M15.5 8.5l-2 5-5 2 2-5 5-2z"/>
+        <circle cx="12" cy="12" r="1"/>
+      </svg>
+      <span>Viaje</span>
+    </div>
+
+    <div class="side-item" onclick="location.href='../Aroma/Aroma.html'">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M5 19c4-1 7-4 9-8"/>
+        <path d="M6 16C3 12 5 7 11 5c2 5 0 9-5 11z"/>
+        <path d="M15 6c1-1 1-2 0-3"/>
+        <path d="M18 8c2-2 2-4 0-5"/>
+      </svg>
+      <span>Aroma</span>
+    </div>
+
+    <div class="side-item" onclick="location.href='../Taller/Taller.html'">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M14 6a4 4 0 0 0 5 5l-8 8a2 2 0 0 1-3-3l8-8"/>
+        <path d="M5 4l15 15"/>
+        <path d="M4 3l3 1 1 3-2 2-3-3 1-3z"/>
+      </svg>
+      <span>Taller</span>
+    </div>
+
+    <div class="side-item" onclick="location.href='../Historia/Historias.html'">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M3 5h6a3 3 0 0 1 3 3v11a3 3 0 0 0-3-3H3V5z"/>
+        <path d="M21 5h-6a3 3 0 0 0-3 3v11a3 3 0 0 1 3-3h6V5z"/>
+      </svg>
+      <span>Historias</span>
+    </div>
+
+    <div class="side-item active" onclick="location.href='Nosotros.html'">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="9" cy="8" r="3"/>
+        <circle cx="17" cy="9" r="2"/>
+        <path d="M3 20c0-4 2-7 6-7s6 3 6 7"/>
+        <path d="M15 14c3 0 5 2 5 5"/>
+      </svg>
+      <span>Nosotros</span>
+    </div>
+  </nav>
+
+
+  <main>
+
+    <!-- =====================================================
+         HERO
+    ====================================================== -->
+    <section class="hero" id="inicio">
+
+      <div class="hero-content">
+
+        <div class="hero-copy">
+
+          <span class="section-code">09 · NOSOTROS</span>
+
+          <h1>
+            EL CAFÉ TAMBIÉN
+            <em>CUENTA QUIÉNES SOMOS.</em>
+          </h1>
+
+          <p>
+            Casa del Café es una experiencia digital creada para descubrir
+            el café desde distintos ángulos: su origen, sus sabores,
+            sus aromas, sus historias y la forma en que llega hasta nuestra taza.
+          </p>
+
+          <div class="hero-buttons">
+
+            <a href="#sobre-nosotros" class="btn primary">
+              CONOCER EL PROYECTO ↓
+            </a>
+
+            <a href="#contacto" class="btn ghost">
+              CONTACTARNOS
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <div class="hero-visual">
+
+          <div class="coffee-world">
+
+            <div class="ring ring-one"></div>
+            <div class="ring ring-two"></div>
+
+            <div class="center-cup">
+              <span>☕</span>
+              <small>CASA DEL CAFÉ</small>
+            </div>
+
+            <div class="world-node node-one">
+              <b>ORIGEN</b>
+              <span>De dónde viene</span>
+            </div>
+
+            <div class="world-node node-two">
+              <b>AROMA</b>
+              <span>Lo que despierta</span>
+            </div>
+
+            <div class="world-node node-three">
+              <b>SABOR</b>
+              <span>Lo que permanece</span>
+            </div>
+
+            <div class="world-node node-four">
+              <b>HISTORIA</b>
+              <span>Lo que se cuenta</span>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         SOBRE NOSOTROS
+    ====================================================== -->
+    <section class="about section" id="sobre-nosotros">
+
+      <div class="section-heading">
+
+        <span>ACERCA DE CASA DEL CAFÉ</span>
+
+        <h2>
+          Aprender de café sin sentir que estás leyendo un manual.
+        </h2>
+
+      </div>
+
+
+      <div class="about-grid">
+
+        <article class="about-main">
+
+          <span class="tiny-title">NUESTRA IDEA</span>
+
+          <p class="big-text">
+            Queremos que cada sección de Casa del Café se sienta como
+            una pequeña experiencia: descubrir, probar, comparar y aprender.
+          </p>
+
+          <p>
+            Por eso la página reúne diferentes espacios dedicados al café:
+            desde sus sabores y aromas, hasta su recorrido, preparación,
+            historia y cultura. La intención es presentar la información
+            de una forma visual, clara e interactiva.
+          </p>
+
+        </article>
+
+
+        <div class="about-features">
+
+          <a href="../Sabores/Sabores.html">
+            <span>01</span>
+            <div>
+              <b>Sabores</b>
+              <small>Descubre perfiles y notas.</small>
+            </div>
+            <i>→</i>
+          </a>
+
+          <a href="../Viaje/Viaje.html">
+            <span>02</span>
+            <div>
+              <b>Viaje</b>
+              <small>Sigue el camino del grano.</small>
+            </div>
+            <i>→</i>
+          </a>
+
+          <a href="../Aroma/Aroma.html">
+            <span>03</span>
+            <div>
+              <b>Aroma</b>
+              <small>Entrena tu nariz.</small>
+            </div>
+            <i>→</i>
+          </a>
+
+          <a href="../Taller/Taller.html">
+            <span>04</span>
+            <div>
+              <b>Taller</b>
+              <small>Practica tu preparación.</small>
+            </div>
+            <i>→</i>
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         MISIÓN
+    ====================================================== -->
+    <section class="mission">
+
+      <div class="mission-inner section">
+
+        <div class="mission-label">
+          <span>LO QUE NOS MUEVE</span>
+        </div>
+
+        <div class="mission-copy">
+          <h2>
+            El café puede ser cotidiano,
+            pero nunca tiene por qué ser aburrido.
+          </h2>
+
+          <p>
+            Nuestra misión es convertir información sobre café en una
+            experiencia más fácil de explorar, especialmente para quienes
+            quieren aprender sin comenzar con conceptos demasiado técnicos.
+          </p>
+        </div>
+
+
+        <div class="mission-stats">
+
+          <div>
+            <strong>08+</strong>
+            <span>secciones para explorar</span>
+          </div>
+
+          <div>
+            <strong>01</strong>
+            <span>pasión compartida</span>
+          </div>
+
+          <div>
+            <strong>∞</strong>
+            <span>formas de tomar café</span>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         CONTACTO
+    ====================================================== -->
+    <section class="contact section" id="contacto">
+
+      <div class="section-heading horizontal">
+
+        <div>
+          <span>HABLEMOS</span>
+          <h2>Estamos a una taza de distancia.</h2>
+        </div>
+
+       
+
+      </div>
+
+
+      <div class="contact-grid">
+
+        <!-- WHATSAPP -->
+        <a
+          class="contact-card"
+          href="https://wa.me/50300000000"
+          target="_blank"
+          rel="noopener"
+        >
+          <span class="contact-icon">◉</span>
+
+          <div>
+            <small>WHATSAPP</small>
+            <h3>+503 6142-5722</h3>
+            <p>Escríbenos directamente.</p>
+          </div>
+
+          <b>↗</b>
+        </a>
+
+
+        <!-- CORREO -->
+        <a
+          class="contact-card"
+          href="mailto:jorgequintanilla034@gmail.com"
+        >
+          <span class="contact-icon">✉</span>
+
+          <div>
+            <small>CORREO</small>
+            <h3>jorgequintanilla034@gmail.com</h3>
+            <p>Para consultas y comentarios.</p>
+          </div>
+
+          <b>↗</b>
+        </a>
+
+
+        <!-- FACEBOOK -->
+        <a
+          class="contact-card"
+          href="#"
+          target="_blank"
+        >
+          <span class="contact-icon">f</span>
+
+          <div>
+            <small>FACEBOOK</small>
+            <h3>Casa del Café</h3>
+            <p>Síguenos y descubre novedades.</p>
+          </div>
+
+          <b>↗</b>
+        </a>
+
+
+        <!-- INSTAGRAM -->
+        <a
+          class="contact-card"
+          href="#"
+          target="_blank"
+        >
+          <span class="contact-icon">◎</span>
+
+          <div>
+            <small>INSTAGRAM</small>
+            <h3>@casadelcafe</h3>
+            <p>Café, historias y un poco de estética.</p>
+          </div>
+
+          <b>↗</b>
+        </a>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         UBICACIÓN
+    ====================================================== -->
+    <section class="location section">
+
+      <div class="location-grid">
+
+        <div class="location-copy">
+
+          <span class="tiny-title">ENCUÉNTRANOS</span>
+
+          <h2>Nuestra ubicación.</h2>
+
+          <p>
+            Aquí puedes colocar la dirección real de Casa del Café.
+            Cuando tengas el enlace de Google Maps, solamente reemplaza
+            el contenido del cuadro de mapa.
+          </p>
+
+          <div class="address">
+            <span>⌖</span>
+
+            <div>
+              <small>DIRECCIÓN</small>
+              <strong>Escribe aquí tu dirección</strong>
+              <p>Municipio, departamento, El Salvador</p>
+            </div>
+          </div>
+
+          <a
+            class="map-button"
+            href="#"
+            target="_blank"
+          >
+            ABRIR EN GOOGLE MAPS ↗
+          </a>
+
+        </div>
+
+
+        <div class="map-box">
+
+         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4848.129490391281!2d-89.49579264681398!3d13.74763139016169!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f62da6ba47be677%3A0xc214876d24f20dbd!2sInstituto%20Nacional%20de%20Armenia%2010585!5e0!3m2!1ses-419!2ssv!4v1788184632441!5m2!1ses-419!2ssv" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         RESEÑAS
+    ====================================================== -->
+    <section class="reviews">
+
+      <div class="reviews-inner section">
+
+        <div class="reviews-intro">
+
+          <span>OPINIONES</span>
+
+          <h2>¿Qué te pareció Casa del Café?</h2>
+
+          <p>
+            Déjanos una reseña. Se guardará en este navegador,
+            así que incluso si recargas la página seguirá apareciendo.
+          </p>
+
+
+          <div class="rating-summary">
+
+            <strong id="averageRating">5.0</strong>
+
+            <div>
+              <span id="averageStars">★★★★★</span>
+              <small id="reviewCount">0 opiniones</small>
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <form class="review-form" id="reviewForm">
+
+          <div class="form-row">
+
+            <label>
+              TU NOMBRE
+              <input
+                type="text"
+                id="reviewName"
+                placeholder="Escribe tu nombre"
+                maxlength="30"
+                required
+              >
+            </label>
+
+
+            <div class="rating-field">
+
+              <span>TU CALIFICACIÓN</span>
+
+              <div class="stars" id="starSelector">
+                <button type="button" data-value="1">★</button>
+                <button type="button" data-value="2">★</button>
+                <button type="button" data-value="3">★</button>
+                <button type="button" data-value="4">★</button>
+                <button type="button" data-value="5">★</button>
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <label>
+            TU OPINIÓN
+
+            <textarea
+              id="reviewText"
+              placeholder="Cuéntanos qué te gustó de la página..."
+              maxlength="250"
+              required
+            ></textarea>
+          </label>
+
+
+          <div class="form-bottom">
+
+            <small>
+              Máximo 250 caracteres · La reseña se guarda localmente.
+            </small>
+
+            <button type="submit">
+              PUBLICAR OPINIÓN →
+            </button>
+
+          </div>
+
+        </form>
+
+
+        <div class="review-list" id="reviewList">
+
+          <article class="empty-review" id="emptyReview">
+            <span>☕</span>
+            <p>
+              Todavía no hay reseñas guardadas.
+              Puedes ser la primera persona en dejar una.
+            </p>
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         CTA FINAL
+    ====================================================== -->
+    <section class="final">
+
+      <div class="final-inner section">
+
+        <div>
+          <span>CASA DEL CAFÉ</span>
+
+          <h2>
+            Gracias por pasar.<br>
+            ¿Seguimos explorando?
+          </h2>
+        </div>
+
+        <a href="../Descubre/Descubre.html">
+          VOLVER A DESCUBRIR →
+        </a>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- =====================================================
+       FOOTER
+  ====================================================== -->
+  <footer class="footer">
+
+    <div class="footer-main">
+
+      <div>
+        <strong>CASA DEL CAFÉ</strong>
+        <span>El Salvador · 2026</span>
+      </div>
+
+      <div class="footer-links">
+        <a href="../Descubre/Descubre.html">Descubre</a>
+        <a href="../Sabores/Sabores.html">Sabores</a>
+        <a href="../Ritual/Ritual.html">Ritual</a>
+        <a href="../Viaje/Viaje.html">Viaje</a>
+        <a href="../Aroma/Aroma.html">Aroma</a>
+        <a href="../Taller/Taller.html">Taller</a>
+      </div>
+
+      <small>Hecho alrededor de una taza ☕</small>
+
+    </div>
+
+  </footer>
+
+
+  <div class="toast" id="toast"></div>
+
+  <script src="Nosotros.js"></script>
+
+</body>
+</html>

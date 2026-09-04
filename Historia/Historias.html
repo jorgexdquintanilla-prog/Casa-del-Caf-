@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Historias | Casa del Café</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="Historias.css">
+</head>
+<body>
+
+<nav class="sidebar" id="sidebar">
+
+        <div class="side-item" onclick="location.href='../Index.HTML'">
+
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M3 12l9-9 9 9M5 10v10h14V10"/>
+            </svg>
+
+            <span>Regresar</span>
+        </div>
+
+        <div class="side-divider"></div>
+
+        <div class="side-item" onclick="location.href='../Descubre/Descubre.html'">
+
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 3l1.6 5.4L19 10l-5.4 1.6L12 17l-1.6-5.4L5 10l5.4-1.6L12 3z"/>
+            </svg>
+
+            <span>Descubre</span>
+        </div>
+
+        <div class="side-item" onclick="location.href='../Sabores/Sabores.html'">
+
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 11h16v9H4z"/>
+                <path d="M4 15c2 1 3-1 5 0s3 1 5 0 3-1 6 0"/>
+                <path d="M7 11c0-3 2-5 5-5s5 2 5 5"/>
+            </svg>
+
+            <span>Sabores</span>
+        </div>
+
+        <div class="side-item" onclick="location.href='../Ritual/Ritual.html'">
+
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 9h13v6a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5V9z"/>
+                <path d="M17 11h2a3 3 0 0 1 0 6h-3"/>
+            </svg>
+
+            <span>Ritual</span>
+        </div>
+
+        <div class="side-item" onclick="location.href='../Viaje/Viaje.html'">
+
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="9"/>
+                <path d="M15.5 8.5l-2 5-5 2 2-5 5-2z"/>
+                <circle cx="12" cy="12" r="1"/>
+            </svg>
+
+            <span>Viaje</span>
+        </div>
+
+        <div class="side-item" onclick="location.href='../Aroma/Aroma.html'">
+
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M6 17c3-1 5-3 7-6"/>
+                <path d="M7 15C4 11 6 6 12 4c2 5 0 9-5 11z"/>
+            </svg>
+
+            <span>Aroma</span>
+        </div>
+
+        <div class="side-item" onclick="location.href='../Taller/Taller.html'">
+
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M14 6a4 4 0 0 0 5 5l-8 8a2 2 0 0 1-3-3l8-8"/>
+                <path d="M5 4l15 15"/>
+            </svg>
+
+            <span>Taller</span>
+        </div>
+
+        <div class="side-item active" onclick="location.href='Historias.html'">
+
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M3 5h6a3 3 0 0 1 3 3v11a3 3 0 0 0-3-3H3V5z"/>
+                <path d="M21 5h-6a3 3 0 0 0-3 3v11a3 3 0 0 1 3-3h6V5z"/>
+            </svg>
+
+            <span>Historias</span>
+        </div>
+
+        <div class="side-item" onclick="location.href='../Nosotros/Nosotros.html'">
+
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="9" cy="8" r="3"/>
+                <circle cx="17" cy="9" r="2"/>
+                <path d="M3 20c0-4 2-7 6-7s6 3 6 7"/>
+            </svg>
+
+            <span>Nosotros</span>
+        </div>
+
+    </nav>
+
+<header class="header">
+  <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú"><span></span><span></span><span></span></button>
+  <a href="../Index.HTML" class="marca"><h1>CASA DEL CAFÉ</h1></a>
+  <div class="header-search">
+    <span>⌕</span>
+    <input id="story-search" type="text" placeholder="Buscar una historia..." autocomplete="off">
+  </div>
+  <div class="header-actions">
+    <a href="../Descubre/Descubre.html" class="header-btn">EXPLORAR CAFÉS</a>
+    <a href="../Registro/Registro.html" class="header-btn">REGISTRARSE</a>
+  </div>
+</header>
+
+<section class="hero">
+  <span class="eyebrow">08 · HISTORIAS</span>
+  <h2>DETRÁS DE CADA TAZA<br>HAY ALGO QUE CONTAR.</h2>
+  <p>No todo en el café son gramos y temperaturas. También están las madrugadas, las fincas, las conversaciones y ese cafecito que aparece justo cuando uno más lo necesita.</p>
+  <a href="#historias">ABRIR EL DIARIO ↓</a>
+</section>
+
+<main class="stories" id="historias">
+  <div class="section-title">
+    <span>DIARIO CAFETERO</span>
+    <h2>Escoge una historia</h2>
+    <p>Algo sencillo: elegís una tarjeta y el diario cambia. Como chismear, pero con café.</p>
+  </div>
+
+  <div class="story-layout">
+    <div class="story-list">
+      <button class="story-tab active" data-story="madrugada">
+        <small>01 · FINCA</small>
+        <strong>Antes de que salga el sol</strong>
+        <span>Una mañana entre cafetales →</span>
+      </button>
+      <button class="story-tab" data-story="abuela">
+        <small>02 · CASA</small>
+        <strong>El café de la abuela</strong>
+        <span>Una taza que sabe a recuerdo →</span>
+      </button>
+      <button class="story-tab" data-story="lluvia">
+        <small>03 · TARDE</small>
+        <strong>Café cuando llueve</strong>
+        <span>Porque hay combinaciones que no fallan →</span>
+      </button>
+      <button class="story-tab" data-story="amigos">
+        <small>04 · MESA</small>
+        <strong>“Solo un café”</strong>
+        <span>Dos horas después... →</span>
+      </button>
+    </div>
+
+    <article class="diary" id="diary">
+      <div class="paper-mark">CASA DEL CAFÉ · ARCHIVO 01</div>
+      <span class="story-category" id="story-category">FINCA · 5:12 A.M.</span>
+      <h3 id="story-title">Antes de que salga el sol</h3>
+      <div class="story-rule"></div>
+      <p id="story-text">La finca todavía está medio dormida cuando comienza el movimiento. Entre aire frío y hojas mojadas, el día arranca antes que el sol. Para cuando alguien sirve la primera taza, ya hubo manos trabajando detrás de ella.</p>
+      <blockquote id="story-quote">“Uno se despierta por el trabajo... pero el café ayuda a negociar con la madrugada.”</blockquote>
+      <div class="story-footer">
+        <span id="story-page">PÁGINA 01 / 04</span>
+        <button id="next-story">SIGUIENTE HISTORIA →</button>
+      </div>
+    </article>
+  </div>
+</main>
+
+<section class="memory-section">
+  <div class="memory-card">
+    <span>TU TURNO</span>
+    <h2>¿A qué te recuerda el café?</h2>
+    <p>Escribí una frase. No se guarda ni se publica; solo aparece aquí mientras estás en la página.</p>
+    <div class="memory-form">
+      <input id="memory-input" maxlength="90" placeholder="Ej: A las tardes de lluvia con pan dulce...">
+      <button id="memory-button">ESCRIBIR EN EL DIARIO</button>
+    </div>
+    <div class="memory-note" id="memory-note">
+      <small>NOTA SIN ESCRIBIR</small>
+      <p>Tu recuerdo aparecerá aquí ☕</p>
+    </div>
+  </div>
+</section>
+
+<section class="final">
+  <span>FIN DEL DIARIO... POR AHORA</span>
+  <h2>EL CAFÉ SE TERMINA.<br>LAS HISTORIAS NO.</h2>
+  <p>Algunas empiezan en una finca. Otras en una cocina. Y otras con el clásico “solo vamos por un café” que misteriosamente dura tres horas.</p>
+  <a href="../Taller/Taller.html">← VOLVER AL TALLER</a>
+</section>
+
+<footer><span>Casa del Café</span><span>Historias para leer con una taza cerca. ☕</span></footer>
+
+<script src="Historias.js"></script>
+</body>
+</html>

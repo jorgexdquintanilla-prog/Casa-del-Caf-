@@ -1,0 +1,669 @@
+/* =========================
+   COLORES CASA DEL CAFÉ
+========================= */
+
+:root{
+
+    --bg-deep: #24160f;
+    --bg-panel: #342018;
+    --bg-panel-2: #482d20;
+
+    --moss: #71945b;
+    --moss-dark: #355033;
+
+    --ember: #b8782e;
+    --ember-light: #f0c878;
+
+    --parchment: #f6edda;
+    --parchment-dim: #c9b99b;
+
+    --border: #654633;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+
+    background: var(--bg-deep);
+
+    color: var(--parchment);
+
+    font-family: 'Inter', sans-serif;
+
+}
+
+
+/* =========================
+   PORTADA
+========================= */
+
+.portada{
+
+    min-height: 380px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 60px 9%;
+
+    position: relative;
+
+    overflow: hidden;
+
+    background:
+
+        radial-gradient(
+            circle at 80% 40%,
+            rgba(184,120,46,.35),
+            transparent 30%
+        ),
+
+        linear-gradient(
+            120deg,
+            #553821,
+            #24160f
+        );
+
+}
+
+
+.portada::after{
+
+    content: "☕";
+
+    position: absolute;
+
+    right: 10%;
+
+    font-size: 190px;
+
+    opacity: .08;
+
+    transform: rotate(-15deg);
+
+}
+
+
+.portada-contenido{
+
+    position: relative;
+
+    z-index: 2;
+
+}
+
+
+.etiqueta{
+
+    color: var(--moss);
+
+    font-family: 'IBM Plex Mono', monospace;
+
+    font-size: 12px;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 18px;
+
+}
+
+
+.portada h2{
+
+    font-family: 'Playfair Display', serif;
+
+    font-size: 50px;
+
+    line-height: 1.05;
+
+}
+
+
+.descripcion{
+
+    color: var(--parchment-dim);
+
+    max-width: 520px;
+
+    margin-top: 20px;
+
+    line-height: 1.7;
+
+}
+
+
+/* =========================
+   BUSCADOR
+========================= */
+
+.zona-buscador{
+
+    display: flex;
+
+    justify-content: center;
+
+    transform: translateY(-24px);
+
+}
+
+
+.buscador{
+
+    width: min(650px, 90%);
+
+    display: flex;
+
+    background: var(--bg-panel);
+
+    border: 1px solid var(--border);
+
+    box-shadow: 0 15px 40px rgba(0,0,0,.25);
+
+}
+
+
+.buscador input{
+
+    flex: 1;
+
+    padding: 16px;
+
+    border: none;
+    outline: none;
+
+    background: transparent;
+
+    color: var(--parchment);
+
+}
+
+
+.buscador input::placeholder{
+
+    color: var(--parchment-dim);
+
+}
+
+
+.buscador button{
+
+    padding: 0 28px;
+
+    border: none;
+
+    background: var(--ember);
+
+    color: #24160f;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: .2s;
+
+}
+
+
+.buscador button:hover{
+
+    background: var(--ember-light);
+
+}
+
+
+/* =========================
+   CONTENIDO
+========================= */
+
+.contenido{
+
+    width: min(950px, 90%);
+
+    margin: 30px auto 80px;
+
+}
+
+
+.titulo-seccion{
+
+    text-align: center;
+
+    margin-bottom: 40px;
+
+}
+
+
+.titulo-seccion span{
+
+    font-family: 'IBM Plex Mono', monospace;
+
+    color: var(--moss);
+
+    font-size: 11px;
+
+}
+
+
+.titulo-seccion h2{
+
+    font-family: 'Playfair Display', serif;
+
+    font-size: 32px;
+
+    margin: 8px 0;
+
+}
+
+
+.titulo-seccion p{
+
+    color: var(--parchment-dim);
+
+}
+
+
+/* =========================
+   TARJETAS DE RECETAS
+========================= */
+
+.receta{
+
+    display: grid;
+
+    grid-template-columns: 42% 58%;
+
+    min-height: 230px;
+
+    margin-bottom: 22px;
+
+    background: var(--bg-panel);
+
+    border: 1px solid var(--border);
+
+    border-radius: 8px;
+
+    overflow: hidden;
+
+    transition: .25s;
+
+}
+
+
+.receta:hover{
+
+    transform: translateY(-4px);
+
+    border-color: var(--ember);
+
+    box-shadow: 0 18px 40px rgba(0,0,0,.25);
+
+}
+
+
+.imagen{
+
+    min-height: 230px;
+
+    background-position: center;
+
+    background-size: cover;
+
+    position: relative;
+
+}
+
+
+.receta-1{
+
+    background-image:
+
+        linear-gradient(
+            rgba(36,22,15,.1),
+            rgba(36,22,15,.45)
+        ),
+
+        url("https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=800&q=80");
+
+}
+
+
+.receta-2{
+
+    background-image:
+
+        linear-gradient(
+            rgba(36,22,15,.1),
+            rgba(36,22,15,.45)
+        ),
+
+        url("https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=800&q=80");
+
+}
+
+
+.receta-3{
+
+    background-image:
+
+        linear-gradient(
+            rgba(36,22,15,.1),
+            rgba(36,22,15,.45)
+        ),
+
+        url("https://images.unsplash.com/photo-1579954115545-a95591f28bfc?auto=format&fit=crop&w=800&q=80");
+
+}
+
+
+.categoria{
+
+    position: absolute;
+
+    top: 15px;
+    left: 15px;
+
+    padding: 6px 10px;
+
+    background: var(--moss-dark);
+
+    font-family: 'IBM Plex Mono', monospace;
+
+    font-size: 9px;
+
+    border-radius: 3px;
+
+}
+
+
+.info-receta{
+
+    padding: 32px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+}
+
+
+.meta{
+
+    color: var(--ember-light);
+
+    font-family: 'IBM Plex Mono', monospace;
+
+    font-size: 9px;
+
+    margin-bottom: 10px;
+
+}
+
+
+.info-receta h3{
+
+    font-family: 'Playfair Display', serif;
+
+    font-size: 24px;
+
+    margin-bottom: 12px;
+
+}
+
+
+.info-receta p{
+
+    color: var(--parchment-dim);
+
+    line-height: 1.6;
+
+    font-size: 13px;
+
+}
+
+
+.ver-receta{
+
+    align-self: flex-start;
+
+    margin-top: 20px;
+
+    background: none;
+
+    border: none;
+
+    color: var(--moss);
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+}
+
+
+.ver-receta:hover{
+
+    color: var(--ember-light);
+
+}
+
+
+/* =========================
+   FRASE FINAL
+========================= */
+
+.frase{
+
+    text-align: center;
+
+    padding: 80px 20px;
+
+    background: var(--moss-dark);
+
+}
+
+
+.frase span{
+
+    color: var(--ember-light);
+
+    font-size: 25px;
+
+}
+
+
+.frase h2{
+
+    font-family: 'Playfair Display', serif;
+
+    font-size: 34px;
+
+    margin: 15px;
+
+}
+
+
+.frase p{
+
+    color: var(--parchment-dim);
+
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+
+    display: flex;
+
+    justify-content: space-between;
+
+    padding: 25px 7%;
+
+    background: #1a0f0a;
+
+    color: var(--parchment-dim);
+
+    font-family: 'IBM Plex Mono', monospace;
+
+    font-size: 10px;
+
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width: 700px){
+
+    .menu{
+        display: none;
+    }
+
+    .portada h2{
+        font-size: 38px;
+    }
+
+    .receta{
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .imagen{
+
+        min-height: 200px;
+
+    }
+
+    footer{
+
+        flex-direction: column;
+
+        gap: 10px;
+
+    }
+
+}
+
+.menu-toggle{
+  width: 36px; height: 36px;
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  gap: 5px;
+  background: transparent; border: 1px solid var(--border); border-radius: 6px;
+  cursor: pointer; flex-shrink: 0;
+}
+.menu-toggle span{
+  width: 18px; height: 2px; background: var(--parchment);
+  transition: transform .25s ease, opacity .25s ease;
+}
+.menu-toggle.open span:nth-child(1){ transform: translateY(7px) rotate(45deg); }
+.menu-toggle.open span:nth-child(2){ opacity: 0; }
+.menu-toggle.open span:nth-child(3){ transform: translateY(-7px) rotate(-45deg); }
+.side-item{
+  width: 100%;
+  padding: 10px 4px 8px;
+  display: flex; flex-direction: column; align-items: center; gap: 6px;
+  border-radius: 6px; cursor: pointer; color: var(--parchment-dim);
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+  transition: background-color .15s ease, color .15s ease;
+}
+/* =======================================================
+   MENÚ LATERAL Y ENCABEZADO — reglas completas para que
+   funcionen aunque ../Style.css no cargue correctamente.
+   ======================================================= */
+
+#stars{
+  position: fixed; inset: 0; z-index: 0; pointer-events: none;
+}
+
+.shell{ display: flex; min-height: 100vh; position: relative; z-index: 1; }
+
+.sidebar{
+  width: 76px; flex-shrink: 0;
+  background: var(--bg-panel);
+  border-right: 1px solid var(--border);
+  display: flex; flex-direction: column; align-items: center;
+  padding: 20px 0; gap: 6px;
+  overflow-y: auto;
+
+  position: fixed;
+  top: 0; left: 0; height: 100vh;
+  transform: translateX(-100%);
+  transition: transform .3s ease;
+  z-index: 30;
+}
+.sidebar.open{ transform: translateX(0); }
+
+.side-item:hover,
+.side-item:active,
+.side-item:focus-visible{
+  background-color: var(--ember);
+  color: #241000;
+}
+.side-item.active{ color: var(--moss); }
+.side-item.active:hover,
+.side-item.active:active{
+  color: #241000;
+  background-color: var(--ember);
+}
+.side-item span{ font-size: 9.5px; letter-spacing: .02em; text-align: center; line-height: 1.2; }
+.side-item svg{
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+.side-divider{ width: 40px; height: 1px; background: var(--border); margin: 10px 0; }
+
+.main{ flex: 1; min-width: 0; }
+
+header{
+  display: flex; align-items: center; gap: 22px;
+  padding: 14px 28px;
+  background: var(--bg-panel);
+  border-bottom: 1px solid var(--border);
+  position: relative;
+  z-index: 2;
+}
+.brand{ display: flex; align-items: center; gap: 12px; }
+.brand-title{ display: flex; align-items: center; gap: 10px; }
+.brand h1{
+  font-family: 'Playfair Display', serif;
+  font-size: 21px; color: var(--parchment); letter-spacing: 0.3px;
+}
+#coffee-animation{ width: 50px; height: 50px; }
+
+.searchbar{
+  flex: 1; max-width: 480px;
+  display: flex; align-items: center; gap: 8px;
+  background: var(--bg-deep); border: 1px solid var(--border);
+  border-radius: 6px; padding: 9px 14px; color: var(--parchment-dim);
+}
+.searchbar input{
+  background: none; border: none; outline: none; color: var(--parchment);
+  font-family: 'Inter', sans-serif; font-size: 14px; width: 100%;
+}
+.searchbar input::placeholder{ color: var(--parchment-dim); }
+
+.header-actions{ display: flex; gap: 10px; margin-left: auto; }
+.btn{
+  font-family: 'IBM Plex Mono', monospace; font-size: 12px; font-weight: 600;
+  padding: 10px 16px; border-radius: 5px; cursor: pointer;
+  border: 1px solid var(--border); background: transparent; color: var(--parchment);
+  transition: transform .1s, background .15s;
+  white-space: nowrap;
+}
+.btn:hover{ transform: translateY(-1px); }
+.btn-fill{ background: var(--ember); border-color: var(--ember); color: #241000; }
+.btn-fill:hover{ background: var(--ember-light); }

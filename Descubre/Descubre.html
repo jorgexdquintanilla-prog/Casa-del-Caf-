@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Descubre | Casa del Café</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;600&display=swap"
+        rel="stylesheet"
+    >
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"></script>
+
+    <link rel="stylesheet" href="Descubre.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         MENÚ LATERAL
+    ========================== -->
+
+    <nav class="sidebar" id="sidebar">
+
+        <div class="side-item" onclick="location.href='../Index.HTML'">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M3 12l9-9 9 9M5 10v10h14V10"/>
+            </svg>
+            <span>Regresar</span>
+        </div>
+
+        <div class="side-divider"></div>
+
+        <div class="side-item active" onclick="location.href='Descubre.html'">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 3l1.6 5.4L19 10l-5.4 1.6L12 17l-1.6-5.4L5 10l5.4-1.6L12 3z"/>
+                <path d="M19 16l.7 2.3L22 19l-2.3.7L19 22l-.7-2.3L16 19l2.3-.7L19 16z"/>
+            </svg>
+            <span>Descubre</span>
+        </div>
+
+    <div class="side-item" onclick="location.href='../Sabores/Sabores.html'">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 11h16v9H4z"/>
+                <path d="M4 15c2 1 3-1 5 0s3 1 5 0 3-1 6 0"/>
+                <path d="M7 11c0-3 2-5 5-5s5 2 5 5"/>
+                <path d="M12 6V3"/>
+            </svg>
+            <span>Sabores</span>
+        </div>
+
+        <div class="side-item" onclick="location.href='../Ritual/Ritual.html'">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 9h13v6a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5V9z"/>
+                <path d="M17 11h2a3 3 0 0 1 0 6h-3"/>
+                <path d="M8 6c-1-1 1-2 0-3"/>
+                <path d="M12 6c-1-1 1-2 0-3"/>
+            </svg>
+            <span>Ritual</span>
+        </div>
+
+        <div class="side-item" onclick="location.href='../Viaje/Viaje.html'">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="9"/>
+                <path d="M15.5 8.5l-2 5-5 2 2-5 5-2z"/>
+                <circle cx="12" cy="12" r="1"/>
+            </svg>
+            <span>Viaje</span>
+        </div>
+
+        <div class="side-item" onclick="location.href='../Aroma/Aroma.html'">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 19c4-1 7-4 9-8"/>
+                <path d="M6 16C3 12 5 7 11 5c2 5 0 9-5 11z"/>
+                <path d="M15 6c1-1 1-2 0-3"/>
+                <path d="M18 8c2-2 2-4 0-5"/>
+            </svg>
+            <span>Aroma</span>
+        </div>
+
+        <div class="side-item" onclick="location.href='../Taller/Taller.html'">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M14 6a4 4 0 0 0 5 5l-8 8a2 2 0 0 1-3-3l8-8"/>
+                <path d="M5 4l15 15"/>
+                <path d="M4 3l3 1 1 3-2 2-3-3 1-3z"/>
+            </svg>
+            <span>Taller</span>
+        </div>
+
+        <div class="side-item" onclick="location.href='../Historia/Historias.html'">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M3 5h6a3 3 0 0 1 3 3v11a3 3 0 0 0-3-3H3V5z"/>
+                <path d="M21 5h-6a3 3 0 0 0-3 3v11a3 3 0 0 1 3-3h6V5z"/>
+            </svg>
+            <span>Historias</span>
+        </div>
+
+        <div class="side-item" onclick="location.href='../nosotros/Nosotros.html'">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="9" cy="8" r="3"/>
+                <circle cx="17" cy="9" r="2"/>
+                <path d="M3 20c0-4 2-7 6-7s6 3 6 7"/>
+                <path d="M15 14c3 0 5 2 5 5"/>
+            </svg>
+            <span>Nosotros</span>
+        </div>
+
+    </nav>
+
+
+    <!-- =========================
+         HEADER
+    ========================== -->
+
+    <header class="header">
+
+        <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <div class="brand">
+            <div class="brand-title">
+                <h1>CASA DEL CAFÉ</h1>
+                <div id="coffee-animation"></div>
+            </div>
+        </div>
+
+        <div class="searchbar">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+            <input type="text" placeholder="Buscar variedades, fincas y métodos...">
+        </div>
+
+        <div class="header-actions">
+            <button class="btn btn-fill" onclick="location.href='../explorar-cafe.html'">EXPLORAR CAFÉS</button>
+            <button class="btn btn-fill" onclick="location.href='../Registro/Registro.html'">REGISTRARSE</button>
+        </div>
+
+    </header>
+
+
+    <!-- =========================
+         PORTADA
+    ========================== -->
+
+    <section class="hero">
+
+        <div class="hero-decoration">
+            ☕
+        </div>
+
+        <div class="hero-content">
+
+            <p class="mini-titulo">
+                CONOCE LO QUE HAY DETRÁS DE UNA TAZA
+            </p>
+
+            <h2>
+                DESCUBRE
+                <br>
+                EL CAFÉ
+            </h2>
+
+            <p class="hero-texto">
+                Desde una pequeña semilla hasta el aroma que llena
+                una taza. Cada etapa transforma su historia,
+                su carácter y su sabor.
+            </p>
+
+            <a href="#explorar" class="boton-explorar">
+                COMENZAR A EXPLORAR ↓
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         QUÉ QUIERES DESCUBRIR
+    ========================== -->
+
+    <section class="explorar" id="explorar">
+
+        <div class="titulo-seccion">
+            <span>✦ EXPLORA</span>
+
+            <h2>¿Qué quieres descubrir?</h2>
+
+            <p>
+                Hay mucho más dentro de una taza de lo que parece.
+            </p>
+        </div>
+
+
+        <div class="opciones">
+
+            <article class="opcion">
+                <div class="numero">01</div>
+
+                <div class="icono-opcion">
+                    🌱
+                </div>
+
+                <h3>El grano</h3>
+
+                <p>
+                    Antes de convertirse en café, todo comienza
+                    con una semilla y una planta.
+                </p>
+
+                <button data-destino="grano">
+                    DESCUBRIR →
+                </button>
+            </article>
+
+
+            <article class="opcion">
+                <div class="numero">02</div>
+
+                <div class="icono-opcion">
+                    🔥
+                </div>
+
+                <h3>El tostado</h3>
+
+                <p>
+                    El calor transforma el color, el aroma
+                    y gran parte del sabor del café.
+                </p>
+
+                <button data-destino="tostado">
+                    DESCUBRIR →
+                </button>
+            </article>
+
+
+            <article class="opcion">
+                <div class="numero">03</div>
+
+                <div class="icono-opcion">
+                    🍵
+                </div>
+
+                <h3>La taza</h3>
+
+                <p>
+                    La molienda, el agua y la preparación
+                    terminan de darle personalidad.
+                </p>
+
+                <button data-destino="taza">
+                    DESCUBRIR →
+                </button>
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         INFORMACIÓN
+    ========================== -->
+
+    <section class="bloque-info" id="grano">
+
+        <div class="simbolo">
+            🌱
+        </div>
+
+        <div class="texto-info">
+
+            <span>01 · EL ORIGEN</span>
+
+            <h2>Todo comienza en una planta</h2>
+
+            <p>
+                El café nace dentro de un fruto conocido como
+                cereza de café. En su interior normalmente se
+                encuentran las semillas que después serán
+                procesadas y tostadas.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <section class="bloque-info invertido" id="tostado">
+
+        <div class="simbolo">
+            🔥
+        </div>
+
+        <div class="texto-info">
+
+            <span>02 · LA TRANSFORMACIÓN</span>
+
+            <h2>El fuego cambia el grano</h2>
+
+            <p>
+                Durante el tostado los granos verdes cambian
+                de color y desarrollan aromas y sabores.
+                La duración y temperatura influyen mucho
+                en el resultado final.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <section class="bloque-info" id="taza">
+
+        <div class="simbolo">
+            🍵
+        </div>
+
+        <div class="texto-info">
+
+            <span>03 · EL RESULTADO</span>
+
+            <h2>Y finalmente llega a la taza</h2>
+
+            <p>
+                Incluso un excelente café puede cambiar dependiendo
+                de su molienda, cantidad de agua, temperatura
+                y método de preparación.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         VIAJE DEL GRANO
+    ========================== -->
+
+    <section class="viaje-grano">
+
+        <div class="titulo-seccion">
+            <span>DEL ORIGEN A TU TAZA</span>
+
+            <h2>El viaje de un grano</h2>
+
+            <p>
+                Pasa el cursor por cada etapa para descubrirla.
+            </p>
+        </div>
+
+
+        <div class="linea-proceso">
+
+            <div class="etapa" data-texto="Todo comienza con una semilla que crece hasta convertirse en una planta de café.">
+                <div class="circulo">
+                    🌱
+                </div>
+                <strong>Semilla</strong>
+            </div>
+
+
+            <div class="linea"></div>
+
+
+            <div class="etapa" data-texto="La planta produce pequeños frutos conocidos como cerezas de café.">
+                <div class="circulo">
+                    🍒
+                </div>
+                <strong>Cereza</strong>
+            </div>
+
+
+            <div class="linea"></div>
+
+
+            <div class="etapa" data-texto="El fruto se procesa para separar y preparar las semillas antes del tostado.">
+                <div class="circulo">
+                    ☀️
+                </div>
+                <strong>Proceso</strong>
+            </div>
+
+
+            <div class="linea"></div>
+
+
+            <div class="etapa" data-texto="Durante el tostado aparecen muchos de los aromas y sabores que reconocemos en el café.">
+                <div class="circulo">
+                    🔥
+                </div>
+                <strong>Tostado</strong>
+            </div>
+
+
+            <div class="linea"></div>
+
+
+            <div class="etapa" data-texto="Después de molerlo y prepararlo, el largo viaje termina dentro de una taza.">
+                <div class="circulo">
+                    ☕
+                </div>
+                <strong>Taza</strong>
+            </div>
+
+        </div>
+
+
+        <div class="descripcion-etapa" id="descripcion-etapa">
+            Selecciona una etapa para conocer su historia.
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         SABÍAS QUE
+    ========================== -->
+
+    <section class="curiosidades">
+
+        <div class="curiosidad-caja">
+
+            <div class="curiosidad-icono">
+                ✦
+            </div>
+
+            <div>
+
+                <span class="curiosidad-titulo">
+                    ¿SABÍAS QUE...?
+                </span>
+
+                <p id="dato-curioso">
+                    Lo que llamamos “grano de café” en realidad
+                    es la semilla que se encuentra dentro del fruto.
+                </p>
+
+            </div>
+
+            <button id="siguiente-dato">
+                SIGUIENTE DATO →
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         FINAL
+    ========================== -->
+
+    <section class="final">
+
+        <span>☕ CASA DEL CAFÉ</span>
+
+        <h2>
+            Ahora que conoces un poco más,
+            <br>
+            descubre cómo puede saber.
+        </h2>
+
+        <p>
+            Explora recetas y nuevas combinaciones hechas con café.
+        </p>
+
+        <a href="../Sabores/Sabores.html">
+            EXPLORAR SABORES →
+        </a>
+
+    </section>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer>
+        <span>Casa del Café</span>
+        <span>Descubre lo que existe detrás de cada taza ☕</span>
+    </footer>
+
+
+    <script src="Descubre.js"></script>
+
+</body>
+
+</html>

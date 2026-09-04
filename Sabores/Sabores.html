@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sabores | Casa del Café</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;600&display=swap"
+          rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"></script>
+
+    <link rel="stylesheet" href="../Style.css">
+    <link rel="stylesheet" href="Sabores.css">
+</head>
+
+<body>
+
+<canvas id="stars"></canvas>
+
+<div class="shell">
+
+  <nav class="sidebar" id="sidebar">
+    <div class="side-item active" onclick="location.href='../Index.HTML'">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M3 12l9-9 9 9M5 10v10h14V10"/>
+    </svg>
+      <span>Regresar</span>
+    </div>
+
+    <div class="side-divider"></div>
+    <div class="side-item" onclick="location.href='../Descubre/Descubre.html'">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M12 3l1.6 5.4L19 10l-5.4 1.6L12 17l-1.6-5.4L5 10l5.4-1.6L12 3z"/>
+        <path d="M19 16l.7 2.3L22 19l-2.3.7L19 22l-.7-2.3L16 19l2.3-.7L19 16z"/>
+        </svg>
+      <span>Descubre</span>
+    </div>
+    
+    <div class="side-item" onclick="location.href='../Sabores/Sabores.html'">
+       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M4 11h16v9H4z"/>
+          <path d="M4 15c2 1 3-1 5 0s3 1 5 0 3-1 6 0"/>
+          <path d="M7 11c0-3 2-5 5-5s5 2 5 5"/>
+           <path d="M12 6V3"/>
+        </svg>
+      <span>Sabores</span>
+    </div>
+
+    <div class="side-item" onclick="location.href='../Ritual/Ritual.html'">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+  <path d="M4 9h13v6a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5V9z"/>
+  <path d="M17 11h2a3 3 0 0 1 0 6h-3"/>
+  <path d="M8 6c-1-1 1-2 0-3"/>
+  <path d="M12 6c-1-1 1-2 0-3"/>
+</svg>
+      <span>Ritual</span>
+    </div>
+
+    <div class="side-item" onclick="location.href='../viaje/Viaje.html'">
+       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+  <circle cx="12" cy="12" r="9"/>
+  <path d="M15.5 8.5l-2 5-5 2 2-5 5-2z"/>
+  <circle cx="12" cy="12" r="1"/>
+</svg>
+      <span>Viaje</span>
+    </div>
+
+    <div class="side-item" onclick="location.href='../Aroma/Aroma.html'">
+     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+  <path d="M5 19c4-1 7-4 9-8"/>
+  <path d="M6 16C3 12 5 7 11 5c2 5 0 9-5 11z"/>
+  <path d="M15 6c1-1 1-2 0-3"/>
+  <path d="M18 8c2-2 2-4 0-5"/>
+</svg>
+      <span>Aroma</span>
+    </div>
+    
+    <div class="side-item" onclick="location.href='../taller/Taller.html'">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+  <path d="M14 6a4 4 0 0 0 5 5l-8 8a2 2 0 0 1-3-3l8-8"/>
+  <path d="M5 4l15 15"/>
+  <path d="M4 3l3 1 1 3-2 2-3-3 1-3z"/>
+</svg>
+      <span>Taller</span>
+    </div>
+
+    <div class="side-item" onclick="location.href='../historia/Historias.html'">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+  <path d="M3 5h6a3 3 0 0 1 3 3v11a3 3 0 0 0-3-3H3V5z"/>
+  <path d="M21 5h-6a3 3 0 0 0-3 3v11a3 3 0 0 1 3-3h6V5z"/>
+</svg>
+      <span>Historias</span>
+    </div>
+
+    <div class="side-item" onclick="location.href='../Nosotros/Nosotros.html'">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+  <circle cx="9" cy="8" r="3"/>
+  <circle cx="17" cy="9" r="2"/>
+  <path d="M3 20c0-4 2-7 6-7s6 3 6 7"/>
+  <path d="M15 14c3 0 5 2 5 5"/>
+</svg>
+      <span>Recetas</span>
+    </div>
+  </nav>
+
+  <div class="main">
+
+    <header>
+
+      <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="brand">
+        <div class="brand-title">
+          <h1>CASA DEL CAFÉ</h1>
+          <div id="coffee-animation"></div>
+        </div>
+      </div>
+
+      <div class="searchbar">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+        <input type="text" placeholder="Buscar variedades, fincas y métodos...">
+      </div>
+
+      <div class="header-actions">
+        <button class="btn btn-fill" onclick="location.href='../explorar-cafe.html'">EXPLORAR CAFÉS</button>
+        <button class="btn btn-fill" onclick="location.href='../restauracion/registro.html'">REGISTRARSE</button>
+      </div>
+    </header>
+
+<!-- =========================
+     PORTADA
+========================= -->
+
+<section class="portada">
+
+    <div class="portada-contenido">
+    
+
+        <p class="etiqueta">DESCUBRE · PREPARA · DISFRUTA</p>
+
+        <h2>
+            SABORES QUE NACEN
+            <br>
+            DEL CAFÉ
+        </h2>
+
+        <p class="descripcion">
+            Recetas, combinaciones y nuevas formas de disfrutar
+            cada taza de café.
+        </p>
+        
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     BUSCADOR
+========================= -->
+
+<section class="zona-buscador">
+
+    <div class="buscador">
+
+        <input
+            type="text"
+            id="buscar"
+            placeholder="Buscar recetas, ingredientes o sabores..."
+        >
+
+        <button id="boton-buscar">
+            Buscar
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     CONTENIDO
+========================= -->
+
+<main class="contenido">
+
+    <div class="titulo-seccion">
+
+        <span>☕ RECETAS DE LA CASA</span>
+
+        <h2>Explora nuevos sabores</h2>
+
+        <p>
+            Algunas ideas para transformar una taza de café
+            en algo diferente.
+        </p>
+
+    </div>
+
+
+    <!-- RECETA 1 -->
+
+    <article class="receta">
+
+        <div class="imagen receta-1">
+
+            <span class="categoria">
+                CALIENTE
+            </span>
+
+        </div>
+
+        <div class="info-receta">
+
+            <div class="meta">
+                CASA DEL CAFÉ · 5 MIN
+            </div>
+
+            <h3>Café con miel y canela</h3>
+
+            <p>
+                Una combinación cálida y aromática donde la dulzura
+                de la miel acompaña las notas naturales del café.
+            </p>
+
+            <button class="ver-receta">
+                Ver receta →
+            </button>
+
+        </div>
+
+    </article>
+
+
+    <!-- RECETA 2 -->
+
+    <article class="receta">
+
+        <div class="imagen receta-2">
+
+            <span class="categoria">
+                FRÍO
+            </span>
+
+        </div>
+
+        <div class="info-receta">
+
+            <div class="meta">
+                CASA DEL CAFÉ · 8 MIN
+            </div>
+
+            <h3>Café frío con vainilla</h3>
+
+            <p>
+                Café servido sobre hielo con un ligero toque de
+                vainilla para conseguir una bebida refrescante.
+            </p>
+
+            <button class="ver-receta">
+                Ver receta →
+            </button>
+
+        </div>
+
+    </article>
+
+
+    <!-- RECETA 3 -->
+
+    <article class="receta">
+
+        <div class="imagen receta-3">
+
+            <span class="categoria">
+                POSTRE
+            </span>
+
+        </div>
+
+        <div class="info-receta">
+
+            <div class="meta">
+                CASA DEL CAFÉ · 12 MIN
+            </div>
+
+            <h3>Chocolate, cacao y espresso</h3>
+
+            <p>
+                Una mezcla intensa donde el espresso y el cacao
+                crean un sabor profundo y ligeramente dulce.
+            </p>
+
+            <button class="ver-receta">
+                Ver receta →
+            </button>
+
+        </div>
+
+    </article>
+
+</main>
+
+
+<!-- =========================
+     FRASE FINAL
+========================= -->
+
+<section class="frase">
+
+    <span>✦</span>
+
+    <h2>
+        Cada taza puede contar
+        <br>
+        una historia diferente.
+    </h2>
+
+    <p>Experimenta. Prueba. Descubre.</p>
+
+</section>
+
+
+<footer>
+
+    <span>Casa del Café</span>
+
+    <span>Hecho para amantes del café ☕</span>
+
+</footer>
+
+  </div>
+</div>
+
+<script src="Sabores.js"></script>
+
+</body>
+</html>

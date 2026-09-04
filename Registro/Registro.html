@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Casa del Café — Acceso</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+  <main class="contenedor" id="contenedor">
+
+    <section class="caja-formulario login" aria-label="Iniciar sesión">
+      <form id="form-login">
+        <p class="etiqueta">CASA DEL CAFÉ</p>
+        <h1>Bienvenido de nuevo</h1>
+        <p class="subtitulo">Ingresa tus datos para continuar</p>
+
+        <label class="campo">
+          <span>Correo electrónico</span>
+          <input type="email" placeholder="tucorreo@ejemplo.com" required>
+        </label>
+
+        <label class="campo">
+          <span>Contraseña</span>
+          <input type="password" placeholder="••••••••" required>
+        </label>
+
+        <a href="#" class="olvide">¿Olvidaste tu contraseña?</a>
+
+        <button type="submit" class="btn-principal" id="btn-submit-login">Iniciar sesión</button>
+
+        <button type="button" class="btn-cambiar-movil" data-ir-a="registro">
+          ¿No tienes cuenta? Regístrate
+        </button>
+      </form>
+    </section>
+
+    <section class="caja-formulario registro" aria-label="Crear cuenta">
+      <form id="form-registro">
+        <p class="etiqueta">CASA DEL CAFÉ</p>
+        <h1>Crea tu cuenta</h1>
+        <p class="subtitulo">Solo toma un minuto</p>
+
+        <label class="campo">
+          <span>Nombre</span>
+          <input type="text" placeholder="Tu nombre completo" required>
+        </label>
+
+        <label class="campo">
+          <span>Correo electrónico</span>
+          <input type="email" placeholder="tucorreo@ejemplo.com" required>
+        </label>
+
+        <label class="campo">
+          <span>Contraseña</span>
+          <input type="password" placeholder="Crea una contraseña" required>
+        </label>
+
+        <button type="submit" class="btn-principal" id="btn-submit-registro">Crear cuenta</button>
+
+        <button type="button" class="btn-cambiar-movil" data-ir-a="login">
+          ¿Ya tienes cuenta? Inicia sesión
+        </button>
+      </form>
+    </section>
+
+    <section class="panel-deslizante" aria-label="Ilustración animada de café">
+      <div class="panel-mitad panel-registro">
+        <div class="cafe-escena" aria-hidden="true">
+          <div class="cafe-escena__pared"></div>
+          <div class="cafe-escena__ventana">
+            <span class="ventana__barra ventana__barra--v"></span>
+            <span class="ventana__barra ventana__barra--h"></span>
+          </div>
+          <div class="cafe-escena__luz"></div>
+          <div class="cafe-escena__lampara"><span></span></div>
+          <div class="cafe-escena__planta">
+            <span class="planta__maceta"></span>
+            <span class="planta__tallo"></span>
+            <span class="planta__hoja h1"></span>
+            <span class="planta__hoja h2"></span>
+            <span class="planta__hoja h3"></span>
+          </div>
+          <div class="cafe-escena__mesa"></div>
+          <div class="cafe-escena__sombra"></div>
+          <div class="cafe-escena__platillo"></div>
+          <div class="cafe-escena__taza-wrap">
+            <span class="cafe-escena__vapor v1"></span>
+            <span class="cafe-escena__vapor v2"></span>
+            <span class="cafe-escena__vapor v3"></span>
+            <div class="cafe-escena__taza">
+              <span class="cafe-escena__asa"></span>
+              <span class="cafe-escena__borde"></span>
+              <span class="cafe-escena__cafe"></span>
+              <span class="cafe-escena__brillo"></span>
+            </div>
+          </div>
+          <span class="grano g1"></span>
+          <span class="grano g2"></span>
+          <span class="grano g3"></span>
+          <span class="destello d1">✦</span>
+          <span class="destello d2">✦</span>
+          <span class="destello d3">✦</span>
+        </div>
+
+        <div class="panel-mitad__contenido">
+          <h2>¿Eres nuevo aquí?</h2>
+          <p>Regístrate y empieza en unos segundos.</p>
+          <button type="button" class="btn-fantasma" id="btn-ir-registro">Registrarse</button>
+        </div>
+      </div>
+
+      <div class="panel-mitad panel-login">
+        <div class="cafe-escena" aria-hidden="true">
+          <div class="cafe-escena__pared"></div>
+          <div class="cafe-escena__ventana">
+            <span class="ventana__barra ventana__barra--v"></span>
+            <span class="ventana__barra ventana__barra--h"></span>
+          </div>
+          <div class="cafe-escena__luz"></div>
+          <div class="cafe-escena__lampara"><span></span></div>
+          <div class="cafe-escena__planta">
+            <span class="planta__maceta"></span>
+            <span class="planta__tallo"></span>
+            <span class="planta__hoja h1"></span>
+            <span class="planta__hoja h2"></span>
+            <span class="planta__hoja h3"></span>
+          </div>
+          <div class="cafe-escena__mesa"></div>
+          <div class="cafe-escena__sombra"></div>
+          <div class="cafe-escena__platillo"></div>
+          <div class="cafe-escena__taza-wrap">
+            <span class="cafe-escena__vapor v1"></span>
+            <span class="cafe-escena__vapor v2"></span>
+            <span class="cafe-escena__vapor v3"></span>
+            <div class="cafe-escena__taza">
+              <span class="cafe-escena__asa"></span>
+              <span class="cafe-escena__borde"></span>
+              <span class="cafe-escena__cafe"></span>
+              <span class="cafe-escena__brillo"></span>
+            </div>
+          </div>
+          <span class="grano g1"></span>
+          <span class="grano g2"></span>
+          <span class="grano g3"></span>
+          <span class="destello d1">✦</span>
+          <span class="destello d2">✦</span>
+          <span class="destello d3">✦</span>
+        </div>
+
+        <div class="panel-mitad__contenido">
+          <h2>¿Ya tienes cuenta?</h2>
+          <p>Inicia sesión para seguir donde lo dejaste.</p>
+          <button type="button" class="btn-fantasma" id="btn-ir-login">Iniciar sesión</button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

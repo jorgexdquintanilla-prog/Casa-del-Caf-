@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller | Casa del Café</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="Taller.css">
+</head>
+<body>
+
+    <!-- SIDEBAR -->
+    <nav class="sidebar" id="sidebar">
+        <div class="side-item" onclick="location.href='../Index.HTML'">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M3 12l9-9 9 9M5 10v10h14V10"/>
+            </svg>
+            <span>Regresar</span>
+        </div>
+
+        <div class="side-divider"></div>
+
+        <div class="side-item" onclick="location.href='../Descubre/Descubre.html'">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 3l1.6 5.4L19 10l-5.4 1.6L12 17l-1.6-5.4L5 10l5.4-1.6L12 3z"/>
+            </svg>
+            <span>Descubre</span>
+        </div>
+
+        <div class="side-item" onclick="location.href='../Sabores/Sabores.html'">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 11h16v9H4z"/>
+                <path d="M4 15c2 1 3-1 5 0s3 1 5 0 3-1 6 0"/>
+                <path d="M7 11c0-3 2-5 5-5s5 2 5 5"/>
+            </svg>
+            <span>Sabores</span>
+        </div>
+
+        <div class="side-item" onclick="location.href='../Ritual/Ritual.html'">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 9h13v6a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5V9z"/>
+                <path d="M17 11h2a3 3 0 0 1 0 6h-3"/>
+            </svg>
+            <span>Ritual</span>
+        </div>
+
+        <div class="side-item" onclick="location.href='../Viaje/Viaje.html'">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="9"/>
+                <path d="M15.5 8.5l-2 5-5 2 2-5 5-2z"/>
+                <circle cx="12" cy="12" r="1"/>
+            </svg>
+            <span>Viaje</span>
+        </div>
+
+        <div class="side-item" onclick="location.href='../Aroma/Aroma.html'">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M6 17c3-1 5-3 7-6"/>
+                <path d="M7 15C4 11 6 6 12 4c2 5 0 9-5 11z"/>
+            </svg>
+            <span>Aroma</span>
+        </div>
+
+        <div class="side-item active" onclick="location.href='Taller.html'">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M14 6a4 4 0 0 0 5 5l-8 8a2 2 0 0 1-3-3l8-8"/>
+                <path d="M5 4l15 15"/>
+            </svg>
+            <span>Taller</span>
+        </div>
+
+        <div class="side-item" onclick="location.href='../Historia/Historias.html'">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M3 5h6a3 3 0 0 1 3 3v11a3 3 0 0 0-3-3H3V5z"/>
+                <path d="M21 5h-6a3 3 0 0 0-3 3v11a3 3 0 0 1 3-3h6V5z"/>
+            </svg>
+            <span>Historias</span>
+        </div>
+
+        <div class="side-item" onclick="location.href='../Nosotros/Nosotros.html'">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="9" cy="8" r="3"/>
+                <circle cx="17" cy="9" r="2"/>
+                <path d="M3 20c0-4 2-7 6-7s6 3 6 7"/>
+            </svg>
+            <span>Nosotros</span>
+        </div>
+    </nav>
+
+    <!-- HEADER -->
+    <header class="header">
+        <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">
+            <span></span><span></span><span></span>
+        </button>
+
+        <a href="../Index.HTML" class="marca"><h1>CASA DEL CAFÉ</h1></a>
+
+        <div class="header-search">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="7"/>
+                <path d="M21 21l-4.3-4.3"/>
+            </svg>
+            <input id="taller-search" type="text" placeholder="Buscar métodos, molienda y recetas..." autocomplete="off">
+        </div>
+
+        <div class="header-actions">
+            <a href="../Descubre/Descubre.html" class="header-btn">EXPLORAR CAFÉS</a>
+            <a href="../Registro/Registro.html" class="header-btn">REGISTRARSE</a>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-copy">
+            <span class="eyebrow">07 · TALLER</span>
+            <h2>HOY TE TOCA<br>PREPARAR.</h2>
+            <p>
+                Ajusta molienda, café, agua y tiempo. Luego prende la máquina y veamos
+                si sale una taza digna... o evidencia para una investigación.
+            </p>
+
+            <a href="#laboratorio" class="hero-link">ENTRAR AL TALLER ↓</a>
+        </div>
+
+        <div class="machine-hero">
+            <div class="machine-body">
+                <div class="machine-screen">READY</div>
+                <div class="machine-knob"></div>
+                <div class="machine-head"></div>
+                <div class="machine-spout"></div>
+                <div class="hero-cup">
+                    <div class="hero-steam s1"></div>
+                    <div class="hero-steam s2"></div>
+                    <div class="hero-steam s3"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LABORATORIO -->
+    <section class="lab-section" id="laboratorio">
+        <div class="section-title">
+            <span>LABORATORIO CAFETERO</span>
+            <h2>Arma tu preparación</h2>
+            <p>Mové los controles y luego dale a preparar. Aquí el café sí juzga tus decisiones.</p>
+        </div>
+
+        <div class="lab-grid">
+
+            <div class="controls-panel">
+                <div class="control">
+                    <div class="control-head">
+                        <span>MOLIENDA</span>
+                        <strong id="molienda-value">Media</strong>
+                    </div>
+                    <input id="molienda" type="range" min="1" max="5" value="3">
+                    <div class="range-labels"><span>Fina</span><span>Gruesa</span></div>
+                </div>
+
+                <div class="control">
+                    <div class="control-head">
+                        <span>CAFÉ</span>
+                        <strong><span id="cafe-value">18</span> g</strong>
+                    </div>
+                    <input id="cafe" type="range" min="10" max="30" value="18">
+                    <div class="range-labels"><span>10 g</span><span>30 g</span></div>
+                </div>
+
+                <div class="control">
+                    <div class="control-head">
+                        <span>AGUA</span>
+                        <strong><span id="agua-value">280</span> ml</strong>
+                    </div>
+                    <input id="agua" type="range" min="150" max="450" step="10" value="280">
+                    <div class="range-labels"><span>150 ml</span><span>450 ml</span></div>
+                </div>
+
+                <div class="control">
+                    <div class="control-head">
+                        <span>TEMPERATURA</span>
+                        <strong><span id="temp-value">93</span> °C</strong>
+                    </div>
+                    <input id="temperatura" type="range" min="80" max="100" value="93">
+                    <div class="range-labels"><span>80°</span><span>100°</span></div>
+                </div>
+
+                <div class="control">
+                    <div class="control-head">
+                        <span>TIEMPO</span>
+                        <strong><span id="tiempo-value">180</span> s</strong>
+                    </div>
+                    <input id="tiempo" type="range" min="60" max="300" step="10" value="180">
+                    <div class="range-labels"><span>1 min</span><span>5 min</span></div>
+                </div>
+            </div>
+
+            <div class="brew-panel">
+                <div class="brew-machine" id="brew-machine">
+                    <div class="brew-top">
+                        <span>CASA LAB</span>
+                        <strong id="machine-status">LISTA</strong>
+                    </div>
+
+                    <div class="gauge">
+                        <div class="gauge-fill" id="gauge-fill"></div>
+                    </div>
+
+                    <div class="coffee-drop-zone">
+                        <div class="drop" id="drop1"></div>
+                        <div class="drop" id="drop2"></div>
+                        <div class="drop" id="drop3"></div>
+
+                        <div class="cup" id="cup">
+                            <div class="coffee-liquid" id="coffee-liquid"></div>
+                            <div class="steam st1"></div>
+                            <div class="steam st2"></div>
+                            <div class="steam st3"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="brew-button" id="brew-button">
+                    PREPARAR CAFÉ
+                </button>
+
+                <p class="brew-hint">Advertencia: la máquina sí se acuerda de tus atrocidades.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- RESULTADO -->
+    <section class="result-section" id="resultado">
+        <div class="result-card" id="result-card">
+            <span class="result-label">RESULTADO DEL TALLER</span>
+            <h2 id="result-title">Aún no has preparado nada.</h2>
+            <p id="result-comment">
+                Mové los controles y presiona “Preparar café”. No tengás miedo... bueno, un poquito sí.
+            </p>
+
+            <div class="meters">
+                <div class="meter-row">
+                    <span>INTENSIDAD</span>
+                    <div class="meter"><i id="meter-intensity"></i></div>
+                    <b id="score-intensity">0</b>
+                </div>
+                <div class="meter-row">
+                    <span>DULZOR</span>
+                    <div class="meter"><i id="meter-sweetness"></i></div>
+                    <b id="score-sweetness">0</b>
+                </div>
+                <div class="meter-row">
+                    <span>ACIDEZ</span>
+                    <div class="meter"><i id="meter-acidity"></i></div>
+                    <b id="score-acidity">0</b>
+                </div>
+                <div class="meter-row">
+                    <span>BALANCE</span>
+                    <div class="meter"><i id="meter-balance"></i></div>
+                    <b id="score-balance">0</b>
+                </div>
+            </div>
+
+            <div class="rank" id="rank">SIN RANGO</div>
+        </div>
+    </section>
+
+    <!-- RETO DE TIEMPO -->
+    <section class="timing-section">
+        <div class="section-title">
+            <span>MINIJUEGO</span>
+            <h2>Detén la extracción</h2>
+            <p>Presiona iniciar y luego detén la barra dentro de la zona ideal. Fácil... según vos.</p>
+        </div>
+
+        <div class="timing-game">
+            <div class="timing-bar">
+                <div class="sweet-zone"></div>
+                <div class="timing-marker" id="timing-marker"></div>
+            </div>
+
+            <button id="timing-button">INICIAR</button>
+            <p id="timing-message">Zona ideal: el centro. No la mandés a pasear.</p>
+        </div>
+    </section>
+
+    <!-- RECETA SECRETA -->
+    <section class="secret-section">
+        <div class="secret-card">
+            <span>RECETA SECRETA</span>
+            <h2 id="secret-title">???</h2>
+            <p id="secret-text">
+                Existe una combinación escondida en el taller. Si te acercás bastante,
+                la máquina te la va a reconocer.
+            </p>
+            <div class="secret-lock" id="secret-lock">🔒</div>
+        </div>
+    </section>
+
+    <!-- FINAL -->
+    <section class="final">
+        <span>TALLER COMPLETADO</span>
+        <h2>NO ESTUVO<br>TAN MAL.</h2>
+        <p>
+            Preparar café es prueba, error y repetir. A veces sale increíble y a veces
+            sale una cosa que ni con pan francés se salva.
+        </p>
+        <a href="../Aroma/Aroma.html">← VOLVER A AROMA</a>
+    </section>
+
+    <footer>
+        <span>Casa del Café</span>
+        <span>Si salió feo, fue aprendizaje. Si salió bueno, fue talento. ☕</span>
+    </footer>
+
+    <script src="Taller.js"></script>
+</body>
+</html>
